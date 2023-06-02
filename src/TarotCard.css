@@ -7,6 +7,14 @@
   width: 200px;
   height: 300px;
   margin: 5px;
-  float: left;
+  /* float: left; */
   background-color: white;
+}
+
+/* make the name of the card appear under the image but make sure it doesn't create a break forcing the next tarot image to appear below it */
+.tarot-name {
+  /* display: inline-block; */
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
 }
