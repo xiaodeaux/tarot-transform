@@ -108,9 +108,21 @@ export function App() {
     <>
       <h1>Tarot Transform</h1>
       <div className="grid-container">
-        <TarotCard url={cardName[cardNameKeys[0]]} name={cardNameKeys[0]} />
-        <TarotCard url={cardName[cardNameKeys[1]]} name={cardNameKeys[1]} />
-        <TarotCard url={cardName[cardNameKeys[2]]} name={cardNameKeys[2]} />
+        <TarotCard
+          url={cardName[cardNameKeys[0]]}
+          name={cardNameKeys[0]}
+          function="Past"
+        />
+        <TarotCard
+          url={cardName[cardNameKeys[1]]}
+          name={cardNameKeys[1]}
+          function="Present"
+        />
+        <TarotCard
+          url={cardName[cardNameKeys[2]]}
+          name={cardNameKeys[2]}
+          function="Future"
+        />
       </div>
       {/* show a TarotCard component that also has an element that displays the name of the cardNames key for the image. */}
       <br />
