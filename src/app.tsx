@@ -101,6 +101,13 @@ const cardName = {
 
 const cardNameKeys = Object.keys(cardName)
 
+// generate 3 random numbers between 0 and 77 to use as indexes for the cardNameKeys arrays
+const randomCardIndex1 = Math.floor(Math.random() * 78)
+const randomCardIndex2 = Math.floor(Math.random() * 78)
+const randomCardIndex3 = Math.floor(Math.random() * 78)
+
+//
+
 export function App() {
   const [cardIndex, setCardIndex] = useState(0)
 
@@ -109,18 +116,18 @@ export function App() {
       <h1>Tarot Transform</h1>
       <div className="grid-container">
         <TarotCard
-          url={cardName[cardNameKeys[0]]}
-          name={cardNameKeys[0]}
+          url={cardName[cardNameKeys[randomCardIndex1]]}
+          name={cardNameKeys[randomCardIndex1]}
           function="Past"
         />
         <TarotCard
-          url={cardName[cardNameKeys[1]]}
-          name={cardNameKeys[1]}
+          url={cardName[cardNameKeys[randomCardIndex2]]}
+          name={cardNameKeys[randomCardIndex2]}
           function="Present"
         />
         <TarotCard
-          url={cardName[cardNameKeys[2]]}
-          name={cardNameKeys[2]}
+          url={cardName[cardNameKeys[randomCardIndex3]]}
+          name={cardNameKeys[randomCardIndex3]}
           function="Future"
         />
       </div>
